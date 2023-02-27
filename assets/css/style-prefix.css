@@ -2804,8 +2804,8 @@ footer {
   .panel-list-item:last-child { margin-top: 20px; }
 
   .panel-list-item img {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 90px;
     -webkit-border-radius: var(--border-radius-sm);
             border-radius: var(--border-radius-sm);
   }
