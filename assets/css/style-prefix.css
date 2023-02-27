@@ -2666,7 +2666,7 @@ footer {
 
   .header-user-actions .action-btn {
     position: relative;
-    font-size: 35px;
+    font-size: 18px;
     color: var(--onyx);
     padding: 5px;
   }
