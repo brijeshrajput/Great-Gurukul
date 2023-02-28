@@ -1873,6 +1873,11 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 \*-----------------------------------*/
 
 .blog { margin-bottom: 30px; }
+.blog h2{
+  text-align: center;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
 
 .blog-container {
   display: -webkit-box;
@@ -2376,6 +2381,7 @@ footer {
    */
 
   .blog-container { gap: 30px; }
+
 
   .blog-card { min-width: -webkit-calc(50% - 15px); min-width: calc(50% - 15px); }
 
