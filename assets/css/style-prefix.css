@@ -1,3 +1,19 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @codewithsadee 
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
 :root {
 
   /**
@@ -1873,11 +1889,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 \*-----------------------------------*/
 
 .blog { margin-bottom: 30px; }
-.blog h2{
-  text-align: center;
-  margin-bottom: 25px;
-  text-decoration: underline;
-}
 
 .blog-container {
   display: -webkit-box;
@@ -2115,7 +2126,7 @@ footer {
 }
 
 .payment-img {
-  max-width: 90px;
+  max-width: 335px;
   width: 100%;
   margin: auto;
   margin-bottom: 15px;
@@ -2381,7 +2392,6 @@ footer {
    */
 
   .blog-container { gap: 30px; }
-
 
   .blog-card { min-width: -webkit-calc(50% - 15px); min-width: calc(50% - 15px); }
 
@@ -2672,7 +2682,7 @@ footer {
 
   .header-user-actions .action-btn {
     position: relative;
-    font-size: 18px;
+    font-size: 35px;
     color: var(--onyx);
     padding: 5px;
   }
@@ -2746,114 +2756,10 @@ footer {
   }
 
   .desktop-menu-category-list .menu-category > .menu-title:hover::after { -webkit-transform: scaleX(1); -ms-transform: scaleX(1); transform: scaleX(1); }
-  .slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-  }
-  
-  .slides input{
-    display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 800px;
-    height: 500px;
-  }
-  
-  /*css for manual slide navigation*/
-  
-  .navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .manual-btn{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  .manual-btn:hover{
-    background: #40D3DC;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
-  
-  /*css for automatic navigation*/
-  
-  .navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
-  }
-  
-  .navigation-auto div{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
+
   .dropdown-panel {
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 0;
     background: var(--white);
     width: 100%;
@@ -2914,8 +2820,8 @@ footer {
   .panel-list-item:last-child { margin-top: 20px; }
 
   .panel-list-item img {
-    width: 100px;
-    height: 90px;
+    width: 100%;
+    height: auto;
     -webkit-border-radius: var(--border-radius-sm);
             border-radius: var(--border-radius-sm);
   }
@@ -3068,7 +2974,7 @@ footer {
 
   .product-featured .countdown-content { padding: 5px 10px; }
 
-  .product-grid { -ms-grid-columns: (1fr); grid-template-columns: repeat(3, 1fr); }
+  .product-grid { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); }
 
 
 
@@ -3142,7 +3048,7 @@ footer {
 
   .footer-bottom { margin-bottom: 0; }
 
-
+}
 
 
 
@@ -3153,8 +3059,6 @@ footer {
  */
 
 @media (min-width: 1200px) {
-
-}
 
   /**
    * #REUSED STYLE 
@@ -3198,7 +3102,7 @@ footer {
 
   .product-featured .display-number { --fs-5: 1.125rem; }
 
-  .product-grid { -ms-grid-columns: (1fr); grid-template-columns: repeat(4, 1fr); }
+  .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
 
 
 
@@ -3264,7 +3168,7 @@ footer {
 
   .footer-nav { padding-bottom: 50px; }
 
-
+}
 
 
 
@@ -3302,5 +3206,5 @@ footer {
     left: 110px;
     max-width: 460px;
   }
-}
+
 }
