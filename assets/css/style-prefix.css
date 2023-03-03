@@ -225,7 +225,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .header-logo img { margin: auto; }
 
-.header-search-container { position: relative; }
+.header-search-container { position: relative; 
+text-align: center;}
 
 .header-search-container .search-field {
   font-size: var(--fs-7);
